@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgdark: "#191919",
+            },
+          },
+        },
+      };
+    </script>
     <title>Document</title>
   </head>
-  <body class="bg-slate-950 h-screen">
+  <body class="bg-bgdark h-screen">
     <main>
       <!-- navbar component -->
-      <nav class="my-5 mx-40 items-center bg-slate-950 text-white text-bold">
+      <nav class="my-5 mx-40 items-center bg-dark text-white text-bold">
         <div class="flex mx-auto items-center">
           <i class="w-40 mr-auto">
             <img src="./assets/devc_logo_long.png" alt="" />
@@ -19,8 +30,8 @@
             <li class="hover:underline"><a href="">BLOG</a></li>
             <li class="hover:underline"><a href="">EVENTS</a></li>
             <li class="hover:underline"><a href="">JOBS</a></li>
-            <li class="border-solid border-2 px-5 rounded">
-              <a href="">JOIN US</a>
+            <li class="">
+              <a href="" class="border-solid border-2 px-2.5  py-2.5 rounded">JOIN US</a>
             </li>
           </ul>
         </div>
@@ -64,14 +75,80 @@
             </div>
           </form>
           <!-- search form ends here -->
-<!-- job card starts here -->
-<div class=""></div>
-<!-- job card starts here -->
+          <!-- job card starts here -->
+          <div class=""></div>
+          <!-- job card starts here -->
         </aside>
         <!-- job search ends here -->
 
         <!-- job details starts here-->
-        <section></section>
+        <section class="text-white pt-12">
+          <!--this shd overflow vertically-->
+          <div class="flex">
+            <div class="">
+              <h1 class="text-bold text-3xl">Front-End Developer</h1>
+              <p class="text-white opacity-50">ByteForge Technologies | Today</p>
+            </div>
+            <div class="">
+              <p class="opacity-50">$1500-$2500/month</p>
+              <a href="" class="border-solid border-2 px-2.5  py-2.5 rounded">Apply</a>
+            </div>
+          </div>
+          <div class="about">
+            <h2 class="text-bold">About The Job</h2>
+            <p class="opacity-50">
+              ByteForge Technologies is seeking a skilled and creative Front-End
+              Developer to join our dynamic team in Nairobi, Kenya. As a
+              Front-End Developer, you will be responsible for developing and
+              implementing user interface components using HTML, CSS, and
+              JavaScript. You will ensure that our web applications are not only
+              visually appealing but also highly functional and responsive
+              across various devices and platforms.
+            </p>
+          </div>
+          <div class="responsibilities">
+            <h2 class="text-bold">Responsibilities</h2>
+            <ul class="opacity-50 list-disc">
+              <li>
+                Develop new user-facing features and enhance existing ones
+              </li>
+              <li>Ensure the technical feasibility of UI/UX designs</li>
+              <li>Optimize applications for maximum speed and scalability</li>
+              <li>
+                Collaborate with back-end developers and web designers to
+                improve usability
+              </li>
+              <li>Write clean, maintainable, and efficient code</li>
+              <li>
+                Conduct code reviews and provide constructive feedback to peers
+              </li>
+              <li>
+                Stay up-to-date with the latest industry trends and technologies
+                to ensure our projects remain at the forefront of innovation
+              </li>
+              <li>Troubleshoot and debug issues in a timely manner</li>
+              <li>Create and maintain comprehensive documentation</li>
+            </ul>
+          </div>
+          <div class="offer">
+            <h2 class="text-bold">What we offer</h2>
+            <ul class="opacity-50 list-disc">
+              <li>
+                Develop new user-facing features and enhance existing ones
+              </li>
+              <li>Ensure the technical feasibility of UI/UX designs</li>
+              <li>Optimize applications for maximum speed and scalability</li>
+
+              <li>
+                Stay up-to-date with the latest industry trends and technologies
+                to ensure our projects remain at the forefront of innovation
+              </li>
+              <li>Troubleshoot and debug issues in a timely manner</li>
+              <li>Create and maintain comprehensive documentation</li>
+            </ul>
+          </div>
+          <a href="" class="border-solid border-2 px-2.5  py-2.5 rounded">Apply</a>
+        </section>
         <!-- job details ends here-->
       </div>
     </main>
