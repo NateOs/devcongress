@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,9 +20,9 @@
   <body class="bg-bgdark h-screen">
     <main>
       <!-- navbar component -->
-      <nav class="my-5 mx-40 items-center bg-dark text-white text-bold">
-        <div class="flex mx-auto items-center">
-          <i class="w-40 mr-auto">
+      <nav class="items-center bg-dark mx-40 my-5 text-bold text-white">
+        <div class="flex items-center mx-auto">
+          <i class="mr-auto w-40">
             <img src="./assets/devc_logo_long.png" alt="" />
           </i>
           <ul class="flex space-x-5 font-medium">
@@ -31,7 +31,11 @@
             <li class="hover:underline"><a href="">EVENTS</a></li>
             <li class="hover:underline"><a href="">JOBS</a></li>
             <li class="">
-              <a href="" class="border-solid border-2 px-2.5  py-2.5 rounded">JOIN US</a>
+              <a
+                href=""
+                class="inline-block border-2 px-2.5 py-2.5 border-solid rounded w-[6.375rem] h-[2.31rem]">
+                JOIN US
+              </a>
             </li>
           </ul>
         </div>
@@ -39,19 +43,19 @@
       <!-- navbar component ends here-->
 
       <hr />
-      <div class="mx-40 flex mt-5">
+      <div class="flex mx-40 mt-5">
         <!-- job search starts here -->
         <aside class="w-6/12">
           <!-- search form starts here -->
           <form class="">
             <label
               for="default-search"
-              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
+              class="mb-2 font-medium text-gray-900 text-sm dark:text-white sr-only">
               Search
             </label>
             <div class="relative">
               <div
-                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                class="absolute inset-y-0 flex items-center pointer-events-none ps-3 start-0">
                 <svg
                   class="w-4 h-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
@@ -69,7 +73,7 @@
               <input
                 type="search"
                 id="default-search"
-                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="block border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 p-2 border focus:border-blue-500 dark:focus:border-blue-500 w-full text-gray-900 text-sm dark:text-white ps-10 focus:ring-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500"
                 placeholder="What job title or company are you looking for..."
                 required />
             </div>
@@ -82,21 +86,30 @@
         <!-- job search ends here -->
 
         <!-- job details starts here-->
-        <section class="text-white pt-12">
+        <section class="border-[1.5px] px-5 py-5 rounded w-1/2 text-white">
           <!--this shd overflow vertically-->
-          <div class="flex">
+          <div class="flex justify-between mb-6">
             <div class="">
-              <h1 class="text-bold text-3xl">Front-End Developer</h1>
-              <p class="text-white opacity-50">ByteForge Technologies | Today</p>
+              <h1 class="mb-2 text-3xl text-bold">Front-End Developer</h1>
+              <p class="opacity-50 text-white">
+                ByteForge Technologies | Today
+              </p>
+              <p class="opacity-50 text-white text-xs">
+                Nairobi, Kenya | Remote | Full-Time
+              </p>
             </div>
             <div class="">
               <p class="opacity-50">$1500-$2500/month</p>
-              <a href="" class="border-solid border-2 px-2.5  py-2.5 rounded">Apply</a>
+              <a
+                href=""
+                class="block border-2 px-2.5 py-2.5 border-solid rounded w-[6.375rem] h-[2.3125rem]">
+                Apply
+              </a>
             </div>
           </div>
-          <div class="about">
-            <h2 class="text-bold">About The Job</h2>
-            <p class="opacity-50">
+          <div class="mb-6 about">
+            <h2 class="text-bold text-lg">About The Job</h2>
+            <p class="opacity-50 text-lg">
               ByteForge Technologies is seeking a skilled and creative Front-End
               Developer to join our dynamic team in Nairobi, Kenya. As a
               Front-End Developer, you will be responsible for developing and
@@ -106,9 +119,9 @@
               across various devices and platforms.
             </p>
           </div>
-          <div class="responsibilities">
-            <h2 class="text-bold">Responsibilities</h2>
-            <ul class="opacity-50 list-disc">
+          <div class="mb-6 responsibilities">
+            <h2 class="text-bold text-lg">Responsibilities</h2>
+            <ul class="opacity-50 ml-10 text-lg list-disc">
               <li>
                 Develop new user-facing features and enhance existing ones
               </li>
@@ -131,8 +144,8 @@
             </ul>
           </div>
           <div class="offer">
-            <h2 class="text-bold">What we offer</h2>
-            <ul class="opacity-50 list-disc">
+            <h2 class="text-bold text-lg">What we offer</h2>
+            <ul class="opacity-50 ml-10 text-lg list-disc">
               <li>
                 Develop new user-facing features and enhance existing ones
               </li>
@@ -147,7 +160,11 @@
               <li>Create and maintain comprehensive documentation</li>
             </ul>
           </div>
-          <a href="" class="border-solid border-2 px-2.5  py-2.5 rounded">Apply</a>
+          <a
+            href=""
+            class="block border-2 px-2.5 py-2.5 border-solid rounded w-[6.375rem] h-[2.3125rem]">
+            Apply
+          </a>
         </section>
         <!-- job details ends here-->
       </div>
