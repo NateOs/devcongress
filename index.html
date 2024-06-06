@@ -11,6 +11,9 @@
             colors: {
               bgdark: "#191919",
             },
+            fontSize: {
+              clamp: "clamp(0.75rem, 0.3333rem + 1.8519vw, 2rem)",
+            },
           },
         },
       };
@@ -20,7 +23,7 @@
   <body class="h-screen bg-bgdark">
     <main>
       <!-- navbar component -->
-      <nav class="items-center mx-40 my-5 text-white bg-dark text-bold">
+      <!-- <nav class="items-center mx-40 my-5 text-white bg-dark text-bold">
         <div class="flex items-center mx-auto">
           <i class="w-40 mr-auto">
             <img src="./assets/devc_logo_long.png" alt="" />
@@ -39,20 +42,16 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
       <!-- navbar component ends here-->
 
       <hr />
-      <div class="flex mx-40 mt-5">
+      <div class="flex mt-5 min-w-80 ">
         <!-- job search starts here -->
-        <aside class="w-6/12 mr-2">
+        <aside class="mr-2 max-w-[760px]">
+          <!-- at md split into 2-->
           <!-- search form starts here -->
           <form class="">
-            <label
-              for="default-search"
-              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
-              Search
-            </label>
             <div class="relative">
               <div
                 class="absolute inset-y-0 flex items-center pointer-events-none ps-3 start-0">
@@ -73,7 +72,7 @@
               <input
                 type="search"
                 id="default-search"
-                class="block w-full p-2 text-sm text-gray-900 border border-white bg-gray-50 dark:bg-bgdark focus:border-blue-500 dark:focus:border-blue-500 dark:text-white ps-10 focus:ring-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 rounded"
+                class="block w-full p-2 text-clamp text-gray-900 border border-white bg-gray-50 dark:bg-bgdark focus:border-blue-500 dark:focus:border-blue-500 dark:text-white ps-10 focus:ring-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 rounded"
                 placeholder="What job title or company are you looking for..."
                 required />
             </div>
@@ -86,33 +85,39 @@
               <img class="h-16 mr-2" src="./assets/dc logo.png" alt="" />
 
               <div class="leading-3">
-                <p class="text-white opacity-50">ByteForge Technologies</p>
-                <h2 class="mb-2 text-2xl font-bold text-white">
+                <p class="text-white opacity-50 text-clamp">
+                  ByteForge Technologies
+                </p>
+                <h2 class="mb-2 text-2xl text-clamp font-bold text-white">
                   Frontend Developer
                 </h2>
-                <p class="text-white opacity-50 text-xs">
+                <p class="text-white opacity-50  text-clamp">
                   Nairobi, Kenya | Remote | Full-Time
                 </p>
               </div>
-              <p class="text-white opacity-50 ml-auto">Today</p>
+              <p class="text-white opacity-50 ml-auto  text-clamp">
+                Today
+              </p>
             </div>
 
-            <p class="font-normal text-white opacity-50 mb-6">
+            <p class="font-normal text-white opacity-50 mb-6 text-clamp">
               ByteForge Technologies is seeking a skilled Front-End Developer
               with experience in HTML, CSS, and JavaScript. Responsibilities
               include developing web interfaces, ensuring responsive design, and
               collaborating with back-end developers. Join us to create
               user-friendly web applications.
             </p>
-            <p class="font-normal text-white opacity-50">$1500-$2500/month</p>
+            <p class="font-normal text-white opacity-50 text-clamp">
+              $1500-$2500/month
+            </p>
           </article>
           <!-- job card ends here -->
         </aside>
 
         <!-- job details starts here-->
-        <section
+        <!-- <section
           class="border-[1.5px] px-5 py-5 rounded w-1/2 text-white overflow-y-scroll overflow-hidden max-h-[45rem]">
-          <!--this shd overflow vertically-->
+          <!--this shd overflow vertically-
           <div class="flex justify-between mb-6">
             <div class="">
               <h1 class="mb-2 text-3xl text-bold">Front-End Developer</h1>
@@ -188,7 +193,7 @@
             class="hover:text-gray-900 hover:bg-gray-100 border-2 border-solid rounded w-[6.375rem] h-[2.3125rem] ml-auto flex justify-center items-center mt-6">
             <a href="" class="">Apply</a>
           </div>
-        </section>
+        </section> -->
         <!-- job details ends here-->
       </div>
     </main>
