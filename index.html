@@ -21,7 +21,6 @@
     <title>Document</title>
   </head>
   <body class="h-screen bg-bgdark">
-  
     <main>
       <!-- navbar component -->
       <nav class="items-center mx-40 my-5 text-white bg-dark text-bold">
@@ -51,32 +50,35 @@
         <!-- job search starts here -->
         <aside class="mr-2 max-w-[550px] md:w-1/2">
           <!-- search form starts here -->
-          <form class="">
-            <div class="relative">
-              <div
-                class="absolute inset-y-0 flex items-center pointer-events-none ps-3 start-0">
-                <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                </svg>
+          <div class="sticky top-0 hover:z-10">
+            <form class="">
+              <div class="relative">
+                <div
+                  class="absolute inset-y-0 flex items-center pointer-events-none ps-3 start-0">
+                  <svg
+                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  class="block w-full p-2 text-clamp text-gray-900 border border-white bg-gray-50 dark:bg-bgdark focus:border-blue-500 dark:focus:border-blue-500 dark:text-white ps-10 focus:ring-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 rounded"
+                  placeholder="What job title or company are you looking for..."
+                  required />
               </div>
-              <input
-                type="search"
-                id="default-search"
-                class="block w-full p-2 text-clamp text-gray-900 border border-white bg-gray-50 dark:bg-bgdark focus:border-blue-500 dark:focus:border-blue-500 dark:text-white ps-10 focus:ring-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 rounded"
-                placeholder="What job title or company are you looking for..."
-                required />
-            </div>
-          </form>
+            </form>
+          </div>
+
           <!-- search form ends here -->
           <!-- job card starts here -->
           <article
@@ -178,7 +180,7 @@
 
         <!-- job details starts here-->
         <section
-          class="border-[1.5px] px-5 py-5 rounded w-1/2 text-white overflow-y-scroll overflow-hidden max-h-[45rem] max-w-[700px] hidden md:block">
+          class="sticky top-0 border-[1.5px] px-5 py-5 rounded w-1/2 text-white overflow-y-scroll overflow-hidden max-h-[45rem] max-w-[700px] hidden md:block">
           <div class="flex justify-between mb-6">
             <div class="">
               <h1 class="mb-2 text-clamp text-bold">Front-End Developer</h1>
@@ -260,5 +262,3 @@
     </main>
   </body>
 </html>
-
-<!-- TODO responsive view -->
