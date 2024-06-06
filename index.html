@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,12 +17,12 @@
     </script>
     <title>Document</title>
   </head>
-  <body class="bg-bgdark h-screen">
+  <body class="h-screen bg-bgdark">
     <main>
       <!-- navbar component -->
-      <nav class="items-center bg-dark mx-40 my-5 text-bold text-white">
+      <nav class="items-center mx-40 my-5 text-white bg-dark text-bold">
         <div class="flex items-center mx-auto">
-          <i class="mr-auto w-40">
+          <i class="w-40 mr-auto">
             <img src="./assets/devc_logo_long.png" alt="" />
           </i>
           <ul class="flex space-x-5 font-medium">
@@ -45,12 +45,12 @@
       <hr />
       <div class="flex mx-40 mt-5">
         <!-- job search starts here -->
-        <aside class="w-6/12">
+        <aside class="w-6/12 mr-2">
           <!-- search form starts here -->
           <form class="">
             <label
               for="default-search"
-              class="mb-2 font-medium text-gray-900 text-sm dark:text-white sr-only">
+              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
               Search
             </label>
             <div class="relative">
@@ -73,7 +73,7 @@
               <input
                 type="search"
                 id="default-search"
-                class="block border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 p-2 border focus:border-blue-500 dark:focus:border-blue-500 w-full text-gray-900 text-sm dark:text-white ps-10 focus:ring-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500"
+                class="block w-full p-2 text-sm text-gray-900 border border-white  bg-gray-50 dark:bg-bgdark focus:border-blue-500 dark:focus:border-blue-500 dark:text-white ps-10 focus:ring-blue-500 dark:placeholder-gray-400 dark:focus:ring-blue-500 rounded"
                 placeholder="What job title or company are you looking for..."
                 required />
             </div>
@@ -91,25 +91,24 @@
           <div class="flex justify-between mb-6">
             <div class="">
               <h1 class="mb-2 text-3xl text-bold">Front-End Developer</h1>
-              <p class="opacity-50 text-white">
+              <p class="text-white opacity-50">
                 ByteForge Technologies | Today
               </p>
-              <p class="opacity-50 text-white text-xs">
+              <p class="text-xs text-white opacity-50">
                 Nairobi, Kenya | Remote | Full-Time
               </p>
             </div>
             <div class="">
-              <p class="opacity-50">$1500-$2500/month</p>
-              <a
-                href=""
-                class="block border-2 px-2.5 py-2.5 border-solid rounded w-[6.375rem] h-[2.3125rem]">
-                Apply
-              </a>
+              <p class="opacity-50" mb-6>$1500-$2500/month</p>
+              <div
+                class="border-2 border-solid rounded w-[6.375rem] h-[2.3125rem] ml-auto flex justify-center items-center mt-6">
+                <a href="" class="">Apply</a>
+              </div>
             </div>
           </div>
           <div class="mb-6 about">
-            <h2 class="text-bold text-lg">About The Job</h2>
-            <p class="opacity-50 text-lg">
+            <h2 class="text-lg text-bold">About The Job</h2>
+            <p class="text-lg opacity-50">
               ByteForge Technologies is seeking a skilled and creative Front-End
               Developer to join our dynamic team in Nairobi, Kenya. As a
               Front-End Developer, you will be responsible for developing and
@@ -120,8 +119,8 @@
             </p>
           </div>
           <div class="mb-6 responsibilities">
-            <h2 class="text-bold text-lg">Responsibilities</h2>
-            <ul class="opacity-50 ml-10 text-lg list-disc">
+            <h2 class="text-lg text-bold">Responsibilities</h2>
+            <ul class="ml-10 text-lg list-disc opacity-50">
               <li>
                 Develop new user-facing features and enhance existing ones
               </li>
@@ -144,8 +143,8 @@
             </ul>
           </div>
           <div class="offer">
-            <h2 class="text-bold text-lg">What we offer</h2>
-            <ul class="opacity-50 ml-10 text-lg list-disc">
+            <h2 class="text-lg text-bold">What we offer</h2>
+            <ul class="ml-10 text-lg list-disc opacity-50">
               <li>
                 Develop new user-facing features and enhance existing ones
               </li>
@@ -160,11 +159,10 @@
               <li>Create and maintain comprehensive documentation</li>
             </ul>
           </div>
-          <a
-            href=""
-            class="block border-2 px-2.5 py-2.5 border-solid rounded w-[6.375rem] h-[2.3125rem]">
-            Apply
-          </a>
+          <div
+            class="border-2 border-solid rounded w-[6.375rem] h-[2.3125rem] ml-auto flex justify-center items-center mt-6">
+            <a href="" class="">Apply</a>
+          </div>
         </section>
         <!-- job details ends here-->
       </div>
